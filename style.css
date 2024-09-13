@@ -1,0 +1,132 @@
+body {
+    background: rgb(25, 25, 25);
+    background: linear-gradient(90deg, rgb(5, 5, 5) 40%, rgb(4, 5, 5) 100%);
+    margin-bottom: 20px;
+}
+
+.top {
+    width: 100%;
+    max-width: 1200px;
+    height: 270px;
+    border: 1px solid rgb(226, 218, 218);
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow for top section */
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(bg.jpg);
+    
+}
+
+#circle {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    overflow: hidden; 
+}
+
+#circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+
+
+
+#name {
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    color: bisque;
+    transition: color 0.5s ease; 
+}
+
+#name:hover {
+    color: gold; 
+}
+#name p:hover {
+    color: gold;
+}
+
+.container-1, .container-2, .container-3 {
+    color: bisque;
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid rgb(226, 218, 218);
+    width: 350px;
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: -60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.container-1 h1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.container-1:hover, .container-2:hover, .container-3:hover {
+    background-color: #204945;
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
+}
+
+.container-1 i, .container-2 i, .container-3 i {
+    color: white; 
+}
+
+#name p {
+    font-size: 30px;
+    margin-top: -20px;
+    color: darkgrey;
+}
+
+/* Media query for phones (480px and smaller) */
+@media only screen and (max-width: 480px) {
+    .top {
+        height: 150px;
+    }
+
+    #circle {
+        height: 100px;
+        width: 100px;
+    }
+
+    .container-1, .container-2, .container-3 {
+        width: 100%;
+        font-size: 16px;
+        padding-left: 10px;
+        margin: 5px 0;
+    }
+
+    body {
+        margin-bottom: 10px;
+    }
+}
+
+/* Media query for desktops (larger than 1024px) */
+@media only screen and (min-width: 1024px) {
+    .top {
+        height: 270px;
+    }
+
+    #circle {
+        height: 150px;
+        width: 150px;
+    }
+
+    .container-1, .container-2, .container-3 {
+        width: 350px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="myjs.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Resume</title>
+</head>
+
+<body>
+    <div class="top">
+        <img id="circle" src="profile.png" alt="Profile Image">
+        <section id="name">
+            <h1>Ornopia, Aubrey Can T.</h1>
+            <p>BSIT-3C</p>
+        </section>
+    </div>
+    <div class="toggle">
+        <input type="checkbox" id="btn">
+        <label for="btn">
+            <span class="track">
+                <span class="track-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <span class="track-bot">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </span>
+            <span class="thumb"></span>
+        </label>
+    </div>
+    
+    <audio id="audio" src="bini.mp3"></audio>
+    
+    <script>
+        const checkbox = document.getElementById('btn');
+        const audio = document.getElementById('audio');
+    
+        checkbox.addEventListener('change', function() {
+            if (checkbox.checked) {
+                audio.play();  
+            } else {
+                audio.pause(); 
+                
+            }
+        });
+    </script>
+    
+    </div>
+    
+    <section class="inf"><h1>&nbsp;</h1></section>
+    <div class="container-1">
+        <h1><i class="fa-solid fa-circle-info"></i> Information</h1>
+        <p><i class='fas fa-map-marker-alt'></i>&nbsp;Address:<span> Cogon, Cordova, Cebu</span></p>
+        <p><i class="fa-solid fa-venus-mars"></i>&nbsp;Gender:<span> Male</span></p>
+        <p><i class="fa-solid fa-address-book"></i>&nbsp;Contact:<span> 09474670556</span></p>
+        <p><i class="fa-solid fa-cake-candles"></i>&nbsp;Birthdate:<span> November 19,2003</span></p>
+    </div>
+
+    <div class="container-2">
+        <h1 class="major" style="text-align:center"><i class="fa fa-leaf"></i>&nbsp;Chosen Major</h1>
+        <p>&nbsp;1st Year:<span> Web Development</span></p>
+        <p>&nbsp;2nd Year:<span> Information Management</span></p>
+        <p>&nbsp;3rd Year:<span> Networking</span></p>
+    </div>
+
+    <div class="container-3">
+        <h1 class="soc" style="text-align: center;"><i class="fa-solid fa-users"></i> Socials</h1>
+        <p><i class="fa-brands fa-pinterest"></i><span> senju_hashirama</span></p>
+        <p><i class="fa-brands fa-facebook"></i><span> Aubrey Ornopia</span></p>
+        <p><i class="fa-brands fa-instagram"></i><span> atsushi_murasaki</span></p>
+    </div>
+
+    <script src="my.js"></script>
+    
+</body>
+</html>
